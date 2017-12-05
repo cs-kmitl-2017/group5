@@ -23,18 +23,18 @@ public class PostalAddressTest {
         String countrySubDivisionID = "";
 
         PostalAddress postalAddress = new PostalAddressBuilder()
-                .setPostcodeCode(postcodeCode)
-                .setBuildingName(buildingName)
-                .setLineOne(lineOne)
-                .setLineTwo(lineTwo)
-                .setAlley(alley)
-                .setVillage(village)
-                .setVillageNumber(villageNumber)
-                .setStreetName(streetName)
-                .setCityName(cityName)
-                .setCitySubDivisionName(citySubDivisionName)
-                .setCountryID(countryID)
-                .setCountrySubDivisionID(countrySubDivisionID)
+                .withPostcodeCode(postcodeCode)
+                .withBuildingName(buildingName)
+                .withLineOne(lineOne)
+                .withLineTwo(lineTwo)
+                .withAlley(alley)
+                .withVillage(village)
+                .withVillageNumber(villageNumber)
+                .withStreetName(streetName)
+                .withCityName(cityName)
+                .withCitySubDivisionName(citySubDivisionName)
+                .withCountryID(countryID)
+                .withCountrySubDivisionID(countrySubDivisionID)
                 .createPostalAddress();
 
         assertEquals(postcodeCode, postalAddress.getPostcodeCode());
