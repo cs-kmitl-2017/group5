@@ -9,7 +9,7 @@ public class Trader {
     private String globalId;
     private String name;
     private String taxId;
-    private List<TradeContact> definedTradeContacts;
+    private List<TraderContact> definedTraderContacts;
     private PostalAddress postalTradeAddress;
 
     public Trader(
@@ -25,7 +25,7 @@ public class Trader {
     }
 
     public Trader() {
-        setDefinedTradeContacts(new ArrayList<TradeContact>());
+        setDefinedTraderContacts(new ArrayList<TraderContact>());
     }
 
     public String getId() {
@@ -60,12 +60,12 @@ public class Trader {
         this.taxId = taxId;
     }
 
-    public List<TradeContact> getDefinedTradeContacts() {
-        return definedTradeContacts;
+    public List<TraderContact> getDefinedTraderContacts() {
+        return definedTraderContacts;
     }
 
-    private void setDefinedTradeContacts(List<TradeContact> definedTradeContacts) {
-        this.definedTradeContacts = definedTradeContacts;
+    private void setDefinedTraderContacts(List<TraderContact> definedTraderContacts) {
+        this.definedTraderContacts = definedTraderContacts;
     }
 
     public PostalAddress getPostalTradeAddress() {
@@ -76,22 +76,10 @@ public class Trader {
         this.postalTradeAddress = postalTradeAddress;
     }
 
-    public Trader withDefinedTradeContact(TradeContact... tradeContacts) {
-        for (TradeContact tradeContact : tradeContacts) {
-            getDefinedTradeContacts().add(tradeContact);
+    public Trader withDefinedTradeContact(TraderContact... traderContacts) {
+        for (TraderContact traderContact : traderContacts) {
+            getDefinedTraderContacts().add(traderContact);
         }
         return this;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (!(obj instanceof Trader)) {
-            return false;
-        } else {
-            Trader target = (Trader) obj;
-            return this.getId().equals(target.getId())
-                    && this.getGlobalId().equals(target.getGlobalId())
-                    && this.getTaxId().equals(target.getTaxId());
-        }
     }
 }

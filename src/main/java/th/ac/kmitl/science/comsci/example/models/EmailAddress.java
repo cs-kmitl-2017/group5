@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class EmailAddress extends TradeContact {
+public class EmailAddress extends TraderContact {
 
     private String uriId;
     private String completeNumber;
