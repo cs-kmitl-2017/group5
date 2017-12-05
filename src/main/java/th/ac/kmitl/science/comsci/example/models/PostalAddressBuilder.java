@@ -9,8 +9,8 @@ public class PostalAddressBuilder {
     private String village;
     private String villageNumber;
     private String streetName;
-    private String cityName;
-    private String citySubDivisionName;
+    private City city;
+    private CitySubDivision citySubDivision;
     private String countryID;
     private String countrySubDivisionID;
 
@@ -54,13 +54,13 @@ public class PostalAddressBuilder {
         return this;
     }
 
-    public PostalAddressBuilder withCityName(String cityName) {
-        this.cityName = cityName;
+    public PostalAddressBuilder withCity(City city) {
+        this.city = city;
         return this;
     }
 
-    public PostalAddressBuilder withCitySubDivisionName(String citySubDivisionName) {
-        this.citySubDivisionName = citySubDivisionName;
+    public PostalAddressBuilder withCitySubDivision(CitySubDivision citySubDivision) {
+        this.citySubDivision = citySubDivision;
         return this;
     }
 
@@ -84,8 +84,8 @@ public class PostalAddressBuilder {
                 village,
                 villageNumber,
                 streetName,
-                cityName,
-                citySubDivisionName,
+                city,
+                citySubDivision,
                 countryID,
                 countrySubDivisionID
         );

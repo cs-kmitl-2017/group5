@@ -2,7 +2,7 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class City {
 
-    private int Id;
+    private int id;
     private String Name;
 
     public City(int id, String name) {
@@ -11,11 +11,11 @@ public class City {
     }
 
     public int getId() {
-        return Id;
+        return id;
     }
 
     public void setId(int id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getName() {

@@ -10,8 +10,8 @@ public class PostalAddress {
     private String village;
     private String villageNumber;
     private String StreetName;
-    private String CityName;
-    private String CitySubDivisionName;
+    private City city;
+    private CitySubDivision citySubDivision;
     private String CountryID;
     private String CountrySubDivisionID;
 
@@ -24,23 +24,22 @@ public class PostalAddress {
             String village,
             String villageNumber,
             String streetName,
-            String cityName,
-            String citySubDivisionName,
+            City city,
+            CitySubDivision citySubDivision,
             String countryID,
             String countrySubDivisionID) {
-
-        setPostcodeCode(postcodeCode);
-        setBuildingName(buildingName);
-        setLineOne(lineOne);
-        setLineTwo(lineTwo);
-        setAlley(alley);
-        setVillage(village);
-        setVillageNumber(villageNumber);
-        setStreetName(streetName);
-        setCityName(cityName);
-        setCitySubDivisionName(citySubDivisionName);
-        setCountryID(countryID);
-        setCountrySubDivisionID(countrySubDivisionID);
+        this.postcodeCode = postcodeCode;
+        this.buildingName = buildingName;
+        this.lineOne = lineOne;
+        this.lineTwo = lineTwo;
+        this.alley = alley;
+        this.village = village;
+        this.villageNumber = villageNumber;
+        StreetName = streetName;
+        this.city = city;
+        this.citySubDivision = citySubDivision;
+        CountryID = countryID;
+        CountrySubDivisionID = countrySubDivisionID;
     }
 
     public String getPostcodeCode() {
@@ -107,20 +106,20 @@ public class PostalAddress {
         StreetName = streetName;
     }
 
-    public String getCityName() {
-        return CityName;
+    public City getCity() {
+        return city;
     }
 
-    public void setCityName(String cityName) {
-        CityName = cityName;
+    public void setCity(City city) {
+        this.city = city;
     }
 
-    public String getCitySubDivisionName() {
-        return CitySubDivisionName;
+    public CitySubDivision getCitySubDivision() {
+        return citySubDivision;
     }
 
-    public void setCitySubDivisionName(String citySubDivisionName) {
-        CitySubDivisionName = citySubDivisionName;
+    public void setCitySubDivision(CitySubDivision citySubDivision) {
+        this.citySubDivision = citySubDivision;
     }
 
     public String getCountryID() {
