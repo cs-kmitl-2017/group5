@@ -6,8 +6,8 @@ public class City {
     private String Name;
 
     public City(int id, String name) {
-        setId(id);
-        setName(name);
+        this.id = id;
+        Name = name;
     }
 
     public int getId() {

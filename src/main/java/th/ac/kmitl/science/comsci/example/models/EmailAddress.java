@@ -2,20 +2,11 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class EmailAddress extends TraderContact {
 
-    private String uriId;
     private String completeNumber;
 
     public EmailAddress(String uriId, String completeNumber) {
-        this.setUriId(uriId);
-        this.setCompleteNumber(completeNumber);
-    }
-
-    public String getUriId() {
-        return uriId;
-    }
-
-    public void setUriId(String uriId) {
-        this.uriId = uriId;
+        super(uriId);
+        this.completeNumber = completeNumber;
     }
 
     public String getCompleteNumber() {

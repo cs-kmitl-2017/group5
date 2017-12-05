@@ -18,10 +18,10 @@ public class Trader {
             String name,
             String taxId) {
         this();
-        this.setId(id);
-        this.setGlobalId(globalId);
-        this.setName(name);
-        this.setTaxId(taxId);
+        this.id = id;
+        this.globalId = globalId;
+        this.name = name;
+        this.taxId = taxId;
     }
 
     public Trader() {
