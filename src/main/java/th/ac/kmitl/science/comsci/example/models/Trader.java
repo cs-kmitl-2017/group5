@@ -76,10 +76,15 @@ public class Trader {
         this.postalTradeAddress = postalTradeAddress;
     }
 
-    public Trader withDefinedTradeContact(TraderContact... traderContacts) {
+    public Trader withDefinedTradeContacts(TraderContact... traderContacts) {
         for (TraderContact traderContact : traderContacts) {
             getDefinedTraderContacts().add(traderContact);
         }
+        return this;
+    }
+
+    public Trader withPostalTradeAddress(PostalAddress postalTradeAddress) {
+        setPostalTradeAddress(postalTradeAddress);
         return this;
     }
 }

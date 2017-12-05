@@ -1,7 +1,8 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-import org.junit.Assert;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PostalAddressTest {
 
@@ -9,44 +10,44 @@ public class PostalAddressTest {
     public void canCreatePostalAddress() {
 
         String postcodeCode = "10310";
-        String buildingName = "King's mongkut building";
-        String lineOne = "เลขที่ 1";
-        String lineTwo = "";
+        String buildingName = "อาคารพระจอมเกล้า";
+        String lineOne = "ชั้น B ห้อง B01 คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง";
+        String lineTwo = "เลขที่ 1";
         String alley = "";
         String village = "";
         String villageNumber = "";
-        String streetName = "Chalongkrung Rd.";
+        String streetName = "ฉลองกรุง";
         String cityName = "ลาดกระบัง";
         String citySubDivisionName = "ลาดกระบัง";
         String countryID = "";
         String countrySubDivisionID = "";
 
-        PostalAddress postalAddress = new PostalAddress(
-                postcodeCode,
-                buildingName,
-                lineOne,
-                lineTwo,
-                alley,
-                village,
-                villageNumber,
-                streetName,
-                cityName,
-                citySubDivisionName,
-                countryID,
-                countrySubDivisionID
-        );
+        PostalAddress postalAddress = new PostalAddressBuilder()
+                .setPostcodeCode(postcodeCode)
+                .setBuildingName(buildingName)
+                .setLineOne(lineOne)
+                .setLineTwo(lineTwo)
+                .setAlley(alley)
+                .setVillage(village)
+                .setVillageNumber(villageNumber)
+                .setStreetName(streetName)
+                .setCityName(cityName)
+                .setCitySubDivisionName(citySubDivisionName)
+                .setCountryID(countryID)
+                .setCountrySubDivisionID(countrySubDivisionID)
+                .createPostalAddress();
 
-        Assert.assertEquals(postcodeCode, postalAddress.getPostcodeCode());
-        Assert.assertEquals(buildingName, postalAddress.getBuildingName());
-        Assert.assertEquals(lineOne, postalAddress.getLineOne());
-        Assert.assertEquals(lineTwo, postalAddress.getLineTwo());
-        Assert.assertEquals(alley, postalAddress.getAlley());
-        Assert.assertEquals(village, postalAddress.getVillage());
-        Assert.assertEquals(villageNumber,postalAddress.getVillageNumber());
-        Assert.assertEquals(streetName, postalAddress.getStreetName());
-        Assert.assertEquals(cityName, postalAddress.getCityName());
-        Assert.assertEquals(citySubDivisionName, postalAddress.getCitySubDivisionName());
-        Assert.assertEquals(countryID, postalAddress.getCountryID());
-        Assert.assertEquals(countrySubDivisionID, postalAddress.getCitySubDivisionName());
+        assertEquals(postcodeCode, postalAddress.getPostcodeCode());
+        assertEquals(buildingName, postalAddress.getBuildingName());
+        assertEquals(lineOne, postalAddress.getLineOne());
+        assertEquals(lineTwo, postalAddress.getLineTwo());
+        assertEquals(alley, postalAddress.getAlley());
+        assertEquals(village, postalAddress.getVillage());
+        assertEquals(villageNumber,postalAddress.getVillageNumber());
+        assertEquals(streetName, postalAddress.getStreetName());
+        assertEquals(cityName, postalAddress.getCityName());
+        assertEquals(citySubDivisionName, postalAddress.getCitySubDivisionName());
+        assertEquals(countryID, postalAddress.getCountryID());
+        assertEquals(countrySubDivisionID, postalAddress.getCountrySubDivisionID());
     }
 }
