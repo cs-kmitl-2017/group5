@@ -27,13 +27,13 @@ public class TraderTest {
         EmailAddress emailAddress2 = new EmailAddress(emailId2, emailCompleteNumber2);
         
         PostalAddress postalAddress = new PostalAddressBuilder()
-                .setPostcodeCode("10310")
-                .setBuildingName("อาคารพระจอมเกล้า")
-                .setLineOne("ชั้น B ห้อง B01 คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง")
-                .setLineTwo("เลขที่ 1")
-                .setStreetName("ฉลองกรุง")
-                .setCityName("ลาดกระบัง")
-                .setCitySubDivisionName("ลาดกระบัง")
+                .withPostcodeCode("10310")
+                .withBuildingName("อาคารพระจอมเกล้า")
+                .withLineOne("ชั้น B ห้อง B01 คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง")
+                .withLineTwo("เลขที่ 1")
+                .withStreetName("ฉลองกรุง")
+                .withCityName("ลาดกระบัง")
+                .withCitySubDivisionName("ลาดกระบัง")
                 .createPostalAddress();
 
         List<TraderContact> emailAddresses = new ArrayList<>();

@@ -14,62 +14,62 @@ public class PostalAddressBuilder {
     private String countryID;
     private String countrySubDivisionID;
 
-    public PostalAddressBuilder setPostcodeCode(String postcodeCode) {
+    public PostalAddressBuilder withPostcodeCode(String postcodeCode) {
         this.postcodeCode = postcodeCode;
         return this;
     }
 
-    public PostalAddressBuilder setBuildingName(String buildingName) {
+    public PostalAddressBuilder withBuildingName(String buildingName) {
         this.buildingName = buildingName;
         return this;
     }
 
-    public PostalAddressBuilder setLineOne(String lineOne) {
+    public PostalAddressBuilder withLineOne(String lineOne) {
         this.lineOne = lineOne;
         return this;
     }
 
-    public PostalAddressBuilder setLineTwo(String lineTwo) {
+    public PostalAddressBuilder withLineTwo(String lineTwo) {
         this.lineTwo = lineTwo;
         return this;
     }
 
-    public PostalAddressBuilder setAlley(String alley) {
+    public PostalAddressBuilder withAlley(String alley) {
         this.alley = alley;
         return this;
     }
 
-    public PostalAddressBuilder setVillage(String village) {
+    public PostalAddressBuilder withVillage(String village) {
         this.village = village;
         return this;
     }
 
-    public PostalAddressBuilder setVillageNumber(String villageNumber) {
+    public PostalAddressBuilder withVillageNumber(String villageNumber) {
         this.villageNumber = villageNumber;
         return this;
     }
 
-    public PostalAddressBuilder setStreetName(String streetName) {
+    public PostalAddressBuilder withStreetName(String streetName) {
         this.streetName = streetName;
         return this;
     }
 
-    public PostalAddressBuilder setCityName(String cityName) {
+    public PostalAddressBuilder withCityName(String cityName) {
         this.cityName = cityName;
         return this;
     }
 
-    public PostalAddressBuilder setCitySubDivisionName(String citySubDivisionName) {
+    public PostalAddressBuilder withCitySubDivisionName(String citySubDivisionName) {
         this.citySubDivisionName = citySubDivisionName;
         return this;
     }
 
-    public PostalAddressBuilder setCountryID(String countryID) {
+    public PostalAddressBuilder withCountryID(String countryID) {
         this.countryID = countryID;
         return this;
     }
 
-    public PostalAddressBuilder setCountrySubDivisionID(String countrySubDivisionID) {
+    public PostalAddressBuilder withCountrySubDivisionID(String countrySubDivisionID) {
         this.countrySubDivisionID = countrySubDivisionID;
         return this;
     }
