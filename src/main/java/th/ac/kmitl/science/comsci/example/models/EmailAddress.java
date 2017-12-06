@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class EmailAddress extends TraderContact {
+public class EmailAddress extends UniversalCommunication {
 
     private String completeNumber;
 

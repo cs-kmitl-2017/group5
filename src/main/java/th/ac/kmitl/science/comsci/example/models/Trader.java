@@ -9,7 +9,7 @@ public class Trader {
     private String globalId;
     private String name;
     private String taxId;
-    private List<TraderContact> definedTraderContacts;
+    private List<UniversalCommunication> definedTradeContacts;
     private PostalAddress postalTradeAddress;
 
     public Trader(
@@ -25,7 +25,7 @@ public class Trader {
     }
 
     public Trader() {
-        setDefinedTraderContacts(new ArrayList<TraderContact>());
+        setDefinedTradeContacts(new ArrayList<UniversalCommunication>());
     }
 
     public String getId() {
@@ -60,12 +60,12 @@ public class Trader {
         this.taxId = taxId;
     }
 
-    public List<TraderContact> getDefinedTraderContacts() {
-        return definedTraderContacts;
+    public List<UniversalCommunication> getDefinedTradeContacts() {
+        return definedTradeContacts;
     }
 
-    private void setDefinedTraderContacts(List<TraderContact> definedTraderContacts) {
-        this.definedTraderContacts = definedTraderContacts;
+    private void setDefinedTradeContacts(List<UniversalCommunication> definedTradeContacts) {
+        this.definedTradeContacts = definedTradeContacts;
     }
 
     public PostalAddress getPostalTradeAddress() {
@@ -76,9 +76,9 @@ public class Trader {
         this.postalTradeAddress = postalTradeAddress;
     }
 
-    public Trader withDefinedTradeContacts(TraderContact... traderContacts) {
-        for (TraderContact traderContact : traderContacts) {
-            getDefinedTraderContacts().add(traderContact);
+    public Trader withDefinedTradeContacts(UniversalCommunication... traderContacts) {
+        for (UniversalCommunication traderContact : traderContacts) {
+            getDefinedTradeContacts().add(traderContact);
         }
         return this;
     }

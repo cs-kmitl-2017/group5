@@ -3,11 +3,11 @@ package th.ac.kmitl.science.comsci.example.models;
 public class City {
 
     private int id;
-    private String Name;
+    private String name;
 
     public City(int id, String name) {
         this.id = id;
-        Name = name;
+        this.name = name;
     }
 
     public int getId() {
@@ -19,10 +19,10 @@ public class City {
     }
 
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String name) {
-        Name = name;
+        this.name = name;
     }
 }

@@ -1,10 +1,10 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public abstract class TraderContact {
+public abstract class UniversalCommunication {
 
     private String uriId;
 
-    public TraderContact(String uriId) {
+    public UniversalCommunication(String uriId) {
         this.uriId = uriId;
     }
 
