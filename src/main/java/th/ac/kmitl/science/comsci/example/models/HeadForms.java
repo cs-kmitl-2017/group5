@@ -5,7 +5,7 @@ public class HeadForms {
     private String exchangedDocument;
     private int id;
     private String name;
-    private String typeCode;
+    private int typeCode;
     private String issueDateTime;
     private String purpose;
     private int purposeCode;
@@ -34,11 +34,11 @@ public class HeadForms {
     }
 
     
-    public String getTypeCode() {
+    public int getTypeCode() {
         return typeCode;
     }
 
-    public void setTypeCode(String typeCode) {
+    public void setTypeCode(int typeCode) {
         this.typeCode = typeCode;
     }
 
