@@ -2,95 +2,95 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class HeadForms {
     
-    private String ExchangedDocument;
-    private int Id;
-    private String Name;
-    private String IssueDateTime;
-    private String Purpose;
-    private int PurposeCode;
-    private String CreationDateTime;
-    private String IncludedNote;
-    private String GlobalId;
+    private String exchangedDocument;
+    private int id;
+    private String name;
+    private String issueDateTime;
+    private String purpose;
+    private int purposeCode;
+    private String creationDateTime;
+    private String includedNote;
+    private String globalId;
     
     
     public String getIncludedNote() {
-        return IncludedNote;
+        return includedNote;
     }
 
-    public void setIncludedNote(String IncludedNote) {
-        this.IncludedNote = IncludedNote;
+    public void setIncludedNote(String includedNote) {
+        this.includedNote = includedNote;
     }
 
     
     public String getCreationDateTime() {
-        return CreationDateTime;
+        return creationDateTime;
     }
 
-    public void setCreationDateTime(String CreationDateTime) {
-        this.CreationDateTime = CreationDateTime;
+    public void setCreationDateTime(String creationDateTime) {
+        this.creationDateTime = creationDateTime;
     }
 
 
     public String getGlobalId() {
-        return GlobalId;
+        return globalId;
     }
 
     public void setGlobalId(String GlobalId) {
-        this.GlobalId = GlobalId;
+        this.globalId = GlobalId;
     }
 
     
     public int getPurposeCode() {
-        return PurposeCode;
+        return purposeCode;
     }
 
     public void setPurposeCode(int PurposeCode) {
-        this.PurposeCode = PurposeCode;
+        this.purposeCode = PurposeCode;
     }
 
 
     public String getPurpose() {
-        return Purpose;
+        return purpose;
     }
 
     public void setPurpose(String Purpose) {
-        this.Purpose = Purpose;
+        this.purpose = Purpose;
     }
 
     
     public String getIssueDateTime() {
-        return IssueDateTime;
+        return issueDateTime;
     }
 
     public void setIssueDateTime(String IssueDateTime) {
-        this.IssueDateTime = IssueDateTime;
+        this.issueDateTime = IssueDateTime;
     }
     
     
     public String getName() {
-        return Name;
+        return name;
     }
 
     public void setName(String Name) {
-        this.Name = Name;
+        this.name = Name;
     }
     
 
     public String getExchangedDocument() {
-        return ExchangedDocument;
+        return exchangedDocument;
     }
 
-    public void setExchangedDocument(String ExchangedDocument) {
-        this.ExchangedDocument = ExchangedDocument;
+    public void setExchangedDocument(String exchangedDocument) {
+        this.exchangedDocument = exchangedDocument;
     }
 
     
     public int getId() {
-        return Id;
+        return id;
     }
 
-    public void setId(int Id) {
-        this.Id = Id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     
