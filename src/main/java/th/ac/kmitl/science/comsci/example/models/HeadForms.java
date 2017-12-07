@@ -5,13 +5,43 @@ public class HeadForms {
     private String exchangedDocument;
     private int id;
     private String name;
+    private String typeCode;
     private String issueDateTime;
     private String purpose;
     private int purposeCode;
+    private String globalId;
     private String creationDateTime;
     private String includedNote;
-    private String globalId;
+    private String Subject;
+    private String content;
+
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
     
+    public String getSubject() {
+        return Subject;
+    }
+
+    public void setSubject(String Subject) {
+        this.Subject = Subject;
+    }
+
+    
+    public String getTypeCode() {
+        return typeCode;
+    }
+
+    public void setTypeDocumentCode(String typeDocumentCode) {
+        this.typeCode = typeDocumentCode;
+    }
+
     
     public String getIncludedNote() {
         return includedNote;
