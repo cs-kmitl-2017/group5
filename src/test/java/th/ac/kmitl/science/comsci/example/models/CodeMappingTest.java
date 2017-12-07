@@ -9,9 +9,9 @@ public class CodeMappingTest {
 
     @Test
     public void canCreateCodeMapping() {
-        CodeMapping codeMapping = generateCodeMapping();
+        CodeMapping codeMapping = generateCityCodeMapping();
 
-        assertEquals(id, codeMapping.getId());
-        assertEquals(name, codeMapping.getName());
+        assertEquals(cityId, codeMapping.getId());
+        assertEquals(cityName, codeMapping.getName());
     }
 }

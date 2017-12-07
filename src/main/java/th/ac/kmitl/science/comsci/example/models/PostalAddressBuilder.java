@@ -69,7 +69,7 @@ public class PostalAddressBuilder {
         return this;
     }
 
-    public PostalAddressBuilder withCountrySubDivisionID(CodeMapping countrySubDivision) {
+    public PostalAddressBuilder withCountrySubDivision(CodeMapping countrySubDivision) {
         this.countrySubDivision = countrySubDivision;
         return this;
     }

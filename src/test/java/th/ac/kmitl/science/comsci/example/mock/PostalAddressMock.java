@@ -14,10 +14,10 @@ public class PostalAddressMock {
     public static String village = "";
     public static String villageNumber = "";
     public static String streetName = "ฉลองกรุง";
-    public static CodeMapping city = CodeMappingMock.generateCodeMapping();
-    public static CodeMapping citySubDivision = CodeMappingMock.generateCodeMapping();
+    public static CodeMapping city = CodeMappingMock.generateCitySubDivisionCodeMapping();
+    public static CodeMapping citySubDivision = CodeMappingMock.generateCityCodeMapping();
     public static String countryID = "";
-    public static String countrySubDivisionID = "";
+    public static CodeMapping countrySubDivision = CodeMappingMock.generateCountrySubDivisionCodeMapping();
 
     public static PostalAddress generateMockPostalAddressWithAllAttribute() {
         PostalAddress postalAddress = new PostalAddressBuilder()
@@ -32,7 +32,7 @@ public class PostalAddressMock {
                 .withCity(city)
                 .withCitySubDivision(citySubDivision)
                 .withCountryID(countryID)
-                .withCountrySubDivisionID(countrySubDivisionID)
+                .withCountrySubDivision(countrySubDivision)
                 .createPostalAddress();
         return postalAddress;
     }

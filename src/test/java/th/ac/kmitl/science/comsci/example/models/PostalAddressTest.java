@@ -22,7 +22,7 @@ public class PostalAddressTest {
         assertEquals(city, postalAddress.getCity());
         assertEquals(citySubDivision, postalAddress.getCitySubDivision());
         assertEquals(countryID, postalAddress.getCountryID());
-        assertEquals(countrySubDivisionID, postalAddress.getCountrySubDivisionID());
+        assertEquals(countrySubDivision, postalAddress.getCountrySubDivision());
     }
 
     @Test
@@ -40,6 +40,6 @@ public class PostalAddressTest {
         assertEquals(city, postalAddress.getCity());
         assertEquals(citySubDivision, postalAddress.getCitySubDivision());
         assertEquals(null, postalAddress.getCountryID());
-        assertEquals(null, postalAddress.getCountrySubDivisionID());
+        assertEquals(null, postalAddress.getCountrySubDivision());
     }
 }

@@ -130,11 +130,11 @@ public class PostalAddress {
         CountryID = countryID;
     }
 
-    public CodeMapping getCountrySubDivisionID() {
+    public CodeMapping getCountrySubDivision() {
         return CountrySubDivision;
     }
 
-    public void setCountrySubDivisionID(CodeMapping countrySubDivisionID) {
-        CountrySubDivision = countrySubDivisionID;
+    public void setCountrySubDivision(CodeMapping countrySubDivision) {
+        CountrySubDivision = countrySubDivision;
     }
 }
