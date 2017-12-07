@@ -38,8 +38,8 @@ public class HeadForms {
         return typeCode;
     }
 
-    public void setTypeDocumentCode(String typeDocumentCode) {
-        this.typeCode = typeDocumentCode;
+    public void setTypeCode(String typeCode) {
+        this.typeCode = typeCode;
     }
 
     
