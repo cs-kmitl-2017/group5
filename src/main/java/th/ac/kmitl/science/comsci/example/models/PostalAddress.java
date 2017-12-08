@@ -9,11 +9,11 @@ public class PostalAddress {
     private String alley;
     private String village;
     private String villageNumber;
-    private String StreetName;
+    private String streetName;
     private CodeMapping city;
     private CodeMapping citySubDivision;
-    private String CountryID;
-    private CodeMapping CountrySubDivision;
+    private String countryID;
+    private CodeMapping countrySubDivision;
 
     public PostalAddress(
             String postcodeCode,
@@ -35,11 +35,11 @@ public class PostalAddress {
         this.alley = alley;
         this.village = village;
         this.villageNumber = villageNumber;
-        this.StreetName = streetName;
+        this.streetName = streetName;
         this.city = city;
         this.citySubDivision = citySubDivision;
-        this.CountryID = countryID;
-        this.CountrySubDivision = countrySubDivision;
+        this.countryID = countryID;
+        this.countrySubDivision = countrySubDivision;
     }
 
     public String getPostcodeCode() {
@@ -99,11 +99,11 @@ public class PostalAddress {
     }
 
     public String getStreetName() {
-        return StreetName;
+        return streetName;
     }
 
     public void setStreetName(String streetName) {
-        StreetName = streetName;
+        this.streetName = streetName;
     }
 
     public CodeMapping getCity() {
@@ -123,18 +123,18 @@ public class PostalAddress {
     }
 
     public String getCountryID() {
-        return CountryID;
+        return countryID;
     }
 
     public void setCountryID(String countryID) {
-        CountryID = countryID;
+        this.countryID = countryID;
     }
 
     public CodeMapping getCountrySubDivision() {
-        return CountrySubDivision;
+        return countrySubDivision;
     }
 
     public void setCountrySubDivision(CodeMapping countrySubDivision) {
-        CountrySubDivision = countrySubDivision;
+        this.countrySubDivision = countrySubDivision;
     }
 }

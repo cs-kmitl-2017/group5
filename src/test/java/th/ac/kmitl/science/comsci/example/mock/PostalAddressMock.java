@@ -14,10 +14,10 @@ public class PostalAddressMock {
     public static String village = "";
     public static String villageNumber = "";
     public static String streetName = "ฉลองกรุง";
-    public static CodeMapping city = CodeMappingMock.generateCitySubDivisionCodeMapping();
-    public static CodeMapping citySubDivision = CodeMappingMock.generateCityCodeMapping();
+    public static CodeMapping city = CodeMappingMock.citySubDivision();
+    public static CodeMapping citySubDivision = CodeMappingMock.city();
     public static String countryID = "";
-    public static CodeMapping countrySubDivision = CodeMappingMock.generateCountrySubDivisionCodeMapping();
+    public static CodeMapping countrySubDivision = CodeMappingMock.countrySubDivision();
 
     public static PostalAddress generateMockPostalAddressWithAllAttribute() {
         PostalAddress postalAddress = new PostalAddressBuilder()

@@ -1,6 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class PostalAddressBuilder {
+
     private String postcodeCode;
     private String buildingName;
     private String lineOne;

@@ -9,7 +9,7 @@ public class CodeMappingTest {
 
     @Test
     public void canCreateCodeMapping() {
-        CodeMapping codeMapping = generateCityCodeMapping();
+        CodeMapping codeMapping = city();
 
         assertEquals(cityId, codeMapping.getId());
         assertEquals(cityName, codeMapping.getName());

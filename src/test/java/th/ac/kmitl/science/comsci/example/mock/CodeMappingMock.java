@@ -13,15 +13,15 @@ public class CodeMappingMock {
     public static int countrySubDivisionId = 10;
     public static String countrySubDivisionName = "กรุงเทพมหานคร";
 
-    public static CodeMapping generateCitySubDivisionCodeMapping() {
+    public static CodeMapping citySubDivision() {
         return new CodeMapping(citySubDivisionId, citySubDivisionName);
     }
 
-    public static CodeMapping generateCityCodeMapping() {
+    public static CodeMapping city() {
         return new CodeMapping(cityId, cityName);
     }
 
-    public static CodeMapping generateCountrySubDivisionCodeMapping() {
+    public static CodeMapping countrySubDivision() {
         return new CodeMapping(countrySubDivisionId, countrySubDivisionName);
     }
 }
