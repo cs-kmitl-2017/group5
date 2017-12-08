@@ -100,5 +100,6 @@ public class ExchangedDocument {
 
     public void setId(int id) {
         this.id = id;
-    }    
+    }
+    
 }

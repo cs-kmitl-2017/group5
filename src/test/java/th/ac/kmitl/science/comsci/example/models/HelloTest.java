@@ -6,9 +6,9 @@ public class HelloTest {
 
     @Test
     public void testInputHeadForms() {
-        HeadForms headforms=new HeadForms();
-        
-        
-    }
+        String result = new Hello().getMessage();
 
+        assert (result.contains("Hello"));
+    }
+    
 }
