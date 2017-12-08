@@ -12,8 +12,8 @@ public class HeadFormsTest {
     public void testInputHeadForms(){
     
     Date currentDate = new Date();
-    SimpleDateFormat df = new SimpleDateFormat("F");
-    String currentDateString=df.format(currentDate);
+    SimpleDateFormat isoDateFormat = new SimpleDateFormat("yyyy.MM.dd");
+    String currentDateString=isoDateFormat.format(currentDate);
     
     HeadForms headforms=new HeadForms();
      
