@@ -13,7 +13,6 @@ public class ExchangedDocumentTest {
     SimpleDateFormat isoDateFormat = new SimpleDateFormat("yyyy.MM.dd");
     String currentDateString=isoDateFormat.format(currentDate);
     ExchangedDocument headforms=new ExchangedDocument();
-    String exchangedDocument="TaxVoinceHeadder";
     int id=123;
     String name="TaxVoince";
     int typeCode=1;
@@ -25,7 +24,6 @@ public class ExchangedDocumentTest {
     String includedNote="nothing is wrong";
     String subject="create tax invoice";
     String content="Craea by a company";
-    headforms.setExchangedDocument(exchangedDocument);
     headforms.setId(id);
     headforms.setName(name);
     headforms.setTypeCode(typeCode);
@@ -37,7 +35,6 @@ public class ExchangedDocumentTest {
     headforms.setIncludedNote(includedNote);
     headforms.setSubject(subject);
     headforms.setContent(content);
-    Assert.assertEquals(headforms.getExchangedDocument(),exchangedDocument);
     Assert.assertEquals(headforms.getId(),id);
     Assert.assertEquals(headforms.getName(),name);
     Assert.assertEquals(headforms.getTypeCode(),typeCode);

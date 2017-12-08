@@ -1,8 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class ExchangedDocument {
-    
-    private String exchangedDocument;
+
     private int id;
     private String name;
     private int typeCode;
@@ -95,14 +94,6 @@ public class ExchangedDocument {
         this.name = Name;
     }
     
-    public String getExchangedDocument() {
-        return exchangedDocument;
-    }
-
-    public void setExchangedDocument(String exchangedDocument) {
-        this.exchangedDocument = exchangedDocument;
-    }
-
     public int getId() {
         return id;
     }
