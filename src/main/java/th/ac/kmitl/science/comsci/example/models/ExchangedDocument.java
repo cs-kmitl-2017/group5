@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class HeadForms {
+public class ExchangedDocument {
     
     private String exchangedDocument;
     private int id;
@@ -12,7 +12,7 @@ public class HeadForms {
     private int globalId;
     private String creationDateTime;
     private String includedNote;
-    private String Subject;
+    private String subject;
     private String content;
 
 
@@ -26,11 +26,11 @@ public class HeadForms {
 
     
     public String getSubject() {
-        return Subject;
+        return subject;
     }
 
-    public void setSubject(String Subject) {
-        this.Subject = Subject;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
     
