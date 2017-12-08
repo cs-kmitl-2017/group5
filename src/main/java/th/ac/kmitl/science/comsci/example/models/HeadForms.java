@@ -9,7 +9,7 @@ public class HeadForms {
     private String issueDateTime;
     private String purpose;
     private int purposeCode;
-    private String globalId;
+    private int globalId;
     private String creationDateTime;
     private String includedNote;
     private String Subject;
@@ -61,11 +61,11 @@ public class HeadForms {
     }
 
 
-    public String getGlobalId() {
+    public int getGlobalId() {
         return globalId;
     }
 
-    public void setGlobalId(String GlobalId) {
+    public void setGlobalId(int GlobalId) {
         this.globalId = GlobalId;
     }
 
