@@ -9,8 +9,8 @@ public class Trader {
     private String globalId;
     private String name;
     private String taxId;
-    private List<UniversalCommunication> definedTradeContacts;
-    private PostalAddress postalTradeAddress;
+    private List<UniversalCommunication> definedCiTradeContacts;
+    private PostalAddress postalCiTradeAddress;
 
     public Trader(
             String id,
@@ -25,7 +25,7 @@ public class Trader {
     }
 
     public Trader() {
-        setDefinedTradeContacts(new ArrayList<UniversalCommunication>());
+        setDefinedCiTradeContacts(new ArrayList<UniversalCommunication>());
     }
 
     public String getId() {
@@ -35,7 +35,6 @@ public class Trader {
     protected void setId(String id) {
         if(id == null || id.isEmpty())
             throw new UnsupportedOperationException("This field cannot be null or empty");
-
         this.id = id;
     }
 
@@ -63,31 +62,31 @@ public class Trader {
         this.taxId = taxId;
     }
 
-    public List<UniversalCommunication> getDefinedTradeContacts() {
-        return definedTradeContacts;
+    public List<UniversalCommunication> getDefinedCiTradeContacts() {
+        return definedCiTradeContacts;
     }
 
-    private void setDefinedTradeContacts(List<UniversalCommunication> definedTradeContacts) {
-        this.definedTradeContacts = definedTradeContacts;
+    private void setDefinedCiTradeContacts(List<UniversalCommunication> definedCiTradeContacts) {
+        this.definedCiTradeContacts = definedCiTradeContacts;
     }
 
-    public PostalAddress getPostalTradeAddress() {
-        return postalTradeAddress;
+    public PostalAddress getPostalCiTradeAddress() {
+        return postalCiTradeAddress;
     }
 
-    public void setPostalTradeAddress(PostalAddress postalTradeAddress) {
-        this.postalTradeAddress = postalTradeAddress;
+    public void setPostalCiTradeAddress(PostalAddress postalCiTradeAddress) {
+        this.postalCiTradeAddress = postalCiTradeAddress;
     }
 
-    public Trader withDefinedTradeContacts(UniversalCommunication... traderContacts) {
-        for (UniversalCommunication traderContact : traderContacts) {
-            getDefinedTradeContacts().add(traderContact);
+    public Trader withDefinedCiTradeContacts(UniversalCommunication... tradeContacts) {
+        for (UniversalCommunication tradeContact : tradeContacts) {
+            getDefinedCiTradeContacts().add(tradeContact);
         }
         return this;
     }
 
-    public Trader withPostalTradeAddress(PostalAddress postalTradeAddress) {
-        setPostalTradeAddress(postalTradeAddress);
+    public Trader withPostalCiTradeAddress(PostalAddress postalTradeAddress) {
+        setPostalCiTradeAddress(postalTradeAddress);
         return this;
     }
 }

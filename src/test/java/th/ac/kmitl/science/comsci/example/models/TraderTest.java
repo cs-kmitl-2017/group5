@@ -3,12 +3,10 @@ package th.ac.kmitl.science.comsci.example.models;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
-import th.ac.kmitl.science.comsci.example.mock.PostalAddressMock;
 import th.ac.kmitl.science.comsci.example.mock.UniversalCommunicationMock;
 import th.ac.kmitl.science.comsci.example.mock.TraderMock;
 
 import java.util.List;
-import java.util.UUID;
 
 import static org.junit.Assert.*;
 import static th.ac.kmitl.science.comsci.example.mock.PostalAddressMock.postalAddressWithSomeAttribute;
@@ -34,7 +32,7 @@ public class TraderTest {
         List<UniversalCommunication> universalCommunications = UniversalCommunicationMock.generateMockUniversalCommunicationList();
 
         Trader trader = TraderMock.trader()
-                .withDefinedTradeContacts(
+                .withDefinedCiTradeContacts(
                         universalCommunications.get(0),
                         universalCommunications.get(1)
                 );
@@ -43,7 +41,7 @@ public class TraderTest {
         assertEquals(globalId, trader.getGlobalId());
         assertEquals(name, trader.getName());
         assertEquals(taxId, trader.getTaxId());
-        assertEquals(true, trader.getDefinedTradeContacts().containsAll(universalCommunications));
+        assertEquals(true, trader.getDefinedCiTradeContacts().containsAll(universalCommunications));
     }
 
     @Test
@@ -52,13 +50,13 @@ public class TraderTest {
         PostalAddress postalAddress = postalAddressWithSomeAttribute();
 
         Trader trader = TraderMock.trader()
-                .withPostalTradeAddress(postalAddress);
+                .withPostalCiTradeAddress(postalAddress);
 
         assertEquals(id, trader.getId());
         assertEquals(globalId, trader.getGlobalId());
         assertEquals(name, trader.getName());
         assertEquals(taxId, trader.getTaxId());
-        assertEquals(postalAddress, trader.getPostalTradeAddress());
+        assertEquals(postalAddress, trader.getPostalCiTradeAddress());
     }
 
     @Test
