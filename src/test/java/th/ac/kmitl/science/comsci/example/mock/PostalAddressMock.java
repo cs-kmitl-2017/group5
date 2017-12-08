@@ -19,7 +19,7 @@ public class PostalAddressMock {
     public static String countryID = "";
     public static CodeMapping countrySubDivision = CodeMappingMock.countrySubDivision();
 
-    public static PostalAddress generateMockPostalAddressWithAllAttribute() {
+    public static PostalAddress postalAddress() {
         PostalAddress postalAddress = new PostalAddressBuilder()
                 .withPostcodeCode(postcodeCode)
                 .withBuildingName(buildingName)
@@ -37,7 +37,7 @@ public class PostalAddressMock {
         return postalAddress;
     }
 
-    public static PostalAddress generateMockPostalAddressWithSomeAttribute() {
+    public static PostalAddress postalAddressWithSomeAttribute() {
         PostalAddress postalAddress = new PostalAddressBuilder()
                 .withPostcodeCode(postcodeCode)
                 .withBuildingName(buildingName)

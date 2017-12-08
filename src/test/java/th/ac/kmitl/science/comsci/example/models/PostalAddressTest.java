@@ -9,7 +9,7 @@ public class PostalAddressTest {
 
     @Test
     public void canCreatePostalAddressWithAllAttribute() {
-        PostalAddress postalAddress = generateMockPostalAddressWithAllAttribute();
+        PostalAddress postalAddress = postalAddress();
 
         assertEquals(postcodeCode, postalAddress.getPostcodeCode());
         assertEquals(buildingName, postalAddress.getBuildingName());
@@ -27,7 +27,7 @@ public class PostalAddressTest {
 
     @Test
     public void canCreatePostalAddressWithSomeAttribute() {
-        PostalAddress postalAddress = generateMockPostalAddressWithSomeAttribute();
+        PostalAddress postalAddress = postalAddressWithSomeAttribute();
 
         assertEquals(postcodeCode, postalAddress.getPostcodeCode());
         assertEquals(buildingName, postalAddress.getBuildingName());
