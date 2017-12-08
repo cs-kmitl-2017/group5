@@ -9,7 +9,7 @@ import th.ac.kmitl.science.comsci.example.models.*;
 public class ExchangedDocumentTest {
     
     @Test
-    public void testInputHeadForms(){
+    public void ExchangedDocumentTest(){
         int id=123;
         String name="TaxVoince";
         int typeCode=1;
