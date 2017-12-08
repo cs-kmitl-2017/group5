@@ -6,9 +6,9 @@ public class PostalAddress {
     private String buildingName;
     private String lineOne;
     private String lineTwo;
-    private String alley;
-    private String village;
-    private String villageNumber;
+    private String lineThree;
+    private String lineFour;
+    private String lineFive;
     private String streetName;
     private CodeMapping city;
     private CodeMapping citySubDivision;
@@ -20,8 +20,8 @@ public class PostalAddress {
             String buildingName,
             String lineOne,
             String lineTwo,
-            String alley,
-            String village,
+            String lineThree,
+            String lineFour,
             String villageNumber,
             String streetName,
             CodeMapping city,
@@ -32,9 +32,9 @@ public class PostalAddress {
         this.buildingName = buildingName;
         this.lineOne = lineOne;
         this.lineTwo = lineTwo;
-        this.alley = alley;
-        this.village = village;
-        this.villageNumber = villageNumber;
+        this.lineThree = lineThree;
+        this.lineFour = lineFour;
+        this.lineFive = villageNumber;
         this.streetName = streetName;
         this.city = city;
         this.citySubDivision = citySubDivision;
@@ -74,28 +74,28 @@ public class PostalAddress {
         this.lineTwo = lineTwo;
     }
 
-    public String getAlley() {
-        return alley;
+    public String getLineThree() {
+        return lineThree;
     }
 
-    public void setAlley(String alley) {
-        this.alley = alley;
+    public void setLineThree(String lineThree) {
+        this.lineThree = lineThree;
     }
 
-    public String getVillage() {
-        return village;
+    public String getLineFour() {
+        return lineFour;
     }
 
-    public void setVillage(String village) {
-        this.village = village;
+    public void setLineFour(String lineFour) {
+        this.lineFour = lineFour;
     }
 
-    public String getVillageNumber() {
-        return villageNumber;
+    public String getLineFive() {
+        return lineFive;
     }
 
-    public void setVillageNumber(String villageNumber) {
-        this.villageNumber = villageNumber;
+    public void setLineFive(String lineFive) {
+        this.lineFive = lineFive;
     }
 
     public String getStreetName() {

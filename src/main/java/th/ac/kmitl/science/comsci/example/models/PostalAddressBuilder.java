@@ -6,9 +6,9 @@ public class PostalAddressBuilder {
     private String buildingName;
     private String lineOne;
     private String lineTwo;
-    private String alley;
-    private String village;
-    private String villageNumber;
+    private String lineThree;
+    private String lineFour;
+    private String lineFive;
     private String streetName;
     private CodeMapping city;
     private CodeMapping citySubDivision;
@@ -35,18 +35,18 @@ public class PostalAddressBuilder {
         return this;
     }
 
-    public PostalAddressBuilder withAlley(String alley) {
-        this.alley = alley;
+    public PostalAddressBuilder withLineThree(String lineThree) {
+        this.lineThree = lineThree;
         return this;
     }
 
-    public PostalAddressBuilder withVillage(String village) {
-        this.village = village;
+    public PostalAddressBuilder withLineFour(String lineFour) {
+        this.lineFour = lineFour;
         return this;
     }
 
-    public PostalAddressBuilder withVillageNumber(String villageNumber) {
-        this.villageNumber = villageNumber;
+    public PostalAddressBuilder withLineFive(String lineFive) {
+        this.lineFive = lineFive;
         return this;
     }
 
@@ -81,9 +81,9 @@ public class PostalAddressBuilder {
                 buildingName,
                 lineOne,
                 lineTwo,
-                alley,
-                village,
-                villageNumber,
+                lineThree,
+                lineFour,
+                lineFive,
                 streetName,
                 city,
                 citySubDivision,

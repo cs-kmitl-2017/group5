@@ -15,9 +15,9 @@ public class PostalAddressTest {
         assertEquals(buildingName, postalAddress.getBuildingName());
         assertEquals(lineOne, postalAddress.getLineOne());
         assertEquals(lineTwo, postalAddress.getLineTwo());
-        assertEquals(alley, postalAddress.getAlley());
-        assertEquals(village, postalAddress.getVillage());
-        assertEquals(villageNumber,postalAddress.getVillageNumber());
+        assertEquals(lineThree, postalAddress.getLineThree());
+        assertEquals(lineFour, postalAddress.getLineFour());
+        assertEquals(lineFive,postalAddress.getLineFive());
         assertEquals(streetName, postalAddress.getStreetName());
         assertEquals(city, postalAddress.getCity());
         assertEquals(citySubDivision, postalAddress.getCitySubDivision());
@@ -33,9 +33,9 @@ public class PostalAddressTest {
         assertEquals(buildingName, postalAddress.getBuildingName());
         assertEquals(lineOne, postalAddress.getLineOne());
         assertEquals(lineTwo, postalAddress.getLineTwo());
-        assertEquals(null, postalAddress.getAlley());
-        assertEquals(null, postalAddress.getVillage());
-        assertEquals(null,postalAddress.getVillageNumber());
+        assertEquals(null, postalAddress.getLineThree());
+        assertEquals(null, postalAddress.getLineFour());
+        assertEquals(null,postalAddress.getLineFive());
         assertEquals(streetName, postalAddress.getStreetName());
         assertEquals(city, postalAddress.getCity());
         assertEquals(citySubDivision, postalAddress.getCitySubDivision());

@@ -10,9 +10,9 @@ public class PostalAddressMock {
     public static String buildingName = "อาคารพระจอมเกล้า";
     public static String lineOne = "ชั้น B ห้อง B01 คณะวิทยาศาสตร์ สถาบันเทคโนโลยีพระจอมเกล้า เจ้าคุณทหารลาดกระบัง";
     public static String lineTwo = "เลขที่ 1";
-    public static String alley = "";
-    public static String village = "";
-    public static String villageNumber = "";
+    public static String lineThree = "";
+    public static String lineFour = "";
+    public static String lineFive = "";
     public static String streetName = "ฉลองกรุง";
     public static CodeMapping city = CodeMappingMock.citySubDivision();
     public static CodeMapping citySubDivision = CodeMappingMock.city();
@@ -25,9 +25,9 @@ public class PostalAddressMock {
                 .withBuildingName(buildingName)
                 .withLineOne(lineOne)
                 .withLineTwo(lineTwo)
-                .withAlley(alley)
-                .withVillage(village)
-                .withVillageNumber(villageNumber)
+                .withLineThree(lineThree)
+                .withLineFour(lineFour)
+                .withLineFive(lineFive)
                 .withStreetName(streetName)
                 .withCity(city)
                 .withCitySubDivision(citySubDivision)
