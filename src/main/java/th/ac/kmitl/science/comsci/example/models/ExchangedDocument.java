@@ -15,7 +15,6 @@ public class ExchangedDocument {
     private String subject;
     private String content;
 
-
     public String getContent() {
         return content;
     }
@@ -23,7 +22,6 @@ public class ExchangedDocument {
     public void setContent(String content) {
         this.content = content;
     }
-
     
     public String getSubject() {
         return subject;
@@ -32,7 +30,6 @@ public class ExchangedDocument {
     public void setSubject(String subject) {
         this.subject = subject;
     }
-
     
     public int getTypeCode() {
         return typeCode;
@@ -41,7 +38,6 @@ public class ExchangedDocument {
     public void setTypeCode(int typeCode) {
         this.typeCode = typeCode;
     }
-
     
     public String getIncludedNote() {
         return includedNote;
@@ -50,7 +46,6 @@ public class ExchangedDocument {
     public void setIncludedNote(String includedNote) {
         this.includedNote = includedNote;
     }
-
     
     public String getCreationDateTime() {
         return creationDateTime;
@@ -60,7 +55,6 @@ public class ExchangedDocument {
         this.creationDateTime = creationDateTime;
     }
 
-
     public int getGlobalId() {
         return globalId;
     }
@@ -68,7 +62,6 @@ public class ExchangedDocument {
     public void setGlobalId(int GlobalId) {
         this.globalId = GlobalId;
     }
-
     
     public int getPurposeCode() {
         return purposeCode;
@@ -78,7 +71,6 @@ public class ExchangedDocument {
         this.purposeCode = PurposeCode;
     }
 
-
     public String getPurpose() {
         return purpose;
     }
@@ -86,7 +78,6 @@ public class ExchangedDocument {
     public void setPurpose(String Purpose) {
         this.purpose = Purpose;
     }
-
     
     public String getIssueDateTime() {
         return issueDateTime;
@@ -95,8 +86,7 @@ public class ExchangedDocument {
     public void setIssueDateTime(String IssueDateTime) {
         this.issueDateTime = IssueDateTime;
     }
-    
-    
+        
     public String getName() {
         return name;
     }
@@ -105,7 +95,6 @@ public class ExchangedDocument {
         this.name = Name;
     }
     
-
     public String getExchangedDocument() {
         return exchangedDocument;
     }
@@ -114,15 +103,11 @@ public class ExchangedDocument {
         this.exchangedDocument = exchangedDocument;
     }
 
-    
     public int getId() {
         return id;
     }
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    
-    
+    }    
 }
