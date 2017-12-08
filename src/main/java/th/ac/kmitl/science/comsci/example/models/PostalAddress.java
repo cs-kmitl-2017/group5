@@ -22,7 +22,7 @@ public class PostalAddress {
             String lineTwo,
             String lineThree,
             String lineFour,
-            String villageNumber,
+            String lineFive,
             String streetName,
             CodeMapping city,
             CodeMapping citySubDivision,
@@ -34,7 +34,7 @@ public class PostalAddress {
         this.lineTwo = lineTwo;
         this.lineThree = lineThree;
         this.lineFour = lineFour;
-        this.lineFive = villageNumber;
+        this.lineFive = lineFive;
         this.streetName = streetName;
         this.city = city;
         this.citySubDivision = citySubDivision;
