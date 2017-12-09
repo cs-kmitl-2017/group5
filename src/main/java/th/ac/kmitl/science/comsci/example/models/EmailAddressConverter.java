@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class EmailAddressConverter extends AbstractClassConverter {
+public class EmailAddressConverter extends Converter {
     
     public static String getXML(EmailAddress emailAddress){
         String urlIdTagName="ram:URLID";
