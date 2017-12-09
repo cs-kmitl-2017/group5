@@ -24,4 +24,10 @@ public class ConfigurationTest {
         assertEquals("eTaxApp", configuration.getProperty("db.username"));
     }
 
+    @Test
+    public void cannotInitIfInitialized() {
+        exception.expect(RuntimeException.class);
+        Configuration.init("junitconfig.properties");
+    }
+
 }
