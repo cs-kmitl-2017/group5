@@ -1,11 +1,7 @@
 package th.ac.kmitl.science.comsci.example.utils;
 
-import sun.misc.IOUtils;
-import sun.nio.ch.IOUtil;
-
 import java.io.*;
 import java.util.Properties;
-import java.util.Scanner;
 
 public class Configuration {
 
