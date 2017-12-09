@@ -4,7 +4,9 @@ import th.ac.kmitl.science.comsci.example.utils.Configuration;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
+import javax.servlet.annotation.WebListener;
 
+@WebListener
 public class ConfigurationInitServletContextListener implements ServletContextListener {
 
     @Override
