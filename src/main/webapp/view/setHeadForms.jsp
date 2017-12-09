@@ -9,7 +9,7 @@
     <form action="/setHeadForms" method="POST">
         <h1> หัวเรื่องเอกสาร </h1>
         <br> เลขที่ <input type="text" name="Id" value="" /> </br>
-        <br> ชื่อ <input type="text" name="Name"lue="" /> </br>
+        <br> ชื่อ <input type="text" name="Name"value="" /> </br>
         <br> เลขที่ประเภทเอกสาร <input type="text" name="TypeCode" value="" /> </br>
         <br> สาเหตุการออกเอกสาร <input type="text" name="Purpose" value="" /> </br>
         <br> เลขที่สาเหตุการออกเอกสาร <input type="text" name="PurposeCode" value="" /> </br>
