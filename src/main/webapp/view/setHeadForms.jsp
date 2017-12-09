@@ -1,9 +1,3 @@
-<%-- 
-    Document   : HeadForms
-    Created on : Dec 7, 2017, 7:01:59 PM
-    Author     : MicroComSci
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -26,7 +20,6 @@
         <br>
         <br>
         <input type="submit" value="OK" name="Confirm" />
-    </form>
-        
+    </form>        
     </body>
 </html>
