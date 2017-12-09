@@ -3,24 +3,22 @@ package th.ac.kmitl.science.comsci.example.models;
 import th.ac.kmitl.science.comsci.example.models.ExchangedDocument;
 
 public class ExChangedDocumentConverter extends AbstractClassConverter  {
+      
+    public static String getXML(ExchangedDocument exchangedDocument) {        
+        String headTagName="rsm:CIExchangedDocumentContext";
+        String idTagName="ram:ID";
+        String nameTagName="ram:Name";      
+        String typeCodeTagName="ram:TypeCode";
+        String issueDateTimeTagName="ram:IssueDateTime";
+        String purposeTagName="ram:Purpose";
+        String purposeCodeTagName="ram:PurposeCode";
+        String globalIdTagName="ram:GlobalID";
+        String creationDateTimeTagName="ram:CreationDateTime";
+        String includedNoteTagName="ram:IncludedCINote";
+        String subjectTagName="ram:IncludedCINote"; 
+        String contentTagName="ram:IncludedCINote";
     
-    private String headTagName="rsm:CIExchangedDocumentContext";
-    private String idTagName="ram:ID";
-    private String nameTagName="ram:Name";      
-    private String typeCodeTagName="ram:TypeCode";
-    private String issueDateTimeTagName="ram:IssueDateTime";
-    private String purposeTagName="ram:Purpose";
-    private String purposeCodeTagName="ram:PurposeCode";
-    private String globalIdTagName="ram:GlobalID";
-    private String creationDateTimeTagName="ram:CreationDateTime";
-    private String includedNoteTagName="ram:IncludedCINote";
-    private String subjectTagName="ram:IncludedCINote"; 
-    private String contentTagName="ram:IncludedCINote";    
-    String xml;
-    ExchangedDocument exchangedDocument;   
-
-    public String getXML(ExchangedDocument exchangedDocument) {
-    xml="<"+headTagName+">"
+        String xml="<"+headTagName+">"
             +CreateTagXML(idTagName,exchangedDocument.getId())
             +CreateTagXML(nameTagName,exchangedDocument.getName())
             +CreateTagXML(typeCodeTagName,exchangedDocument.getTypeCode())
