@@ -19,7 +19,7 @@ public class ConfigurationTest {
 
     @Test
     public void canGetConfiguration() {
-        Configuration.init("junitconfig.xml");
+        Configuration.init("junitconfig.properties");
         Configuration configuration = Configuration.getInstance();
         assertEquals("eTaxApp", configuration.getProperty("db.username"));
     }

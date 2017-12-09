@@ -30,7 +30,7 @@ public class Configuration {
         ClassLoader classLoader = getClass().getClassLoader();
         InputStream input = classLoader.getResourceAsStream(configurationFile);
         try {
-            properties.loadFromXML(input);
+            properties.load(input);
         } catch (IOException e) {
             throw new RuntimeException(e.getMessage(), e.getCause());
         }
